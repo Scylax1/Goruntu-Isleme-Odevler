@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Sanal ortamlar
+venv/
+.venv/
+env/
+.env
+
+# IDE / editör
+.vscode/
+.idea/
+*.swp
+
+# İşletim sistemi
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Üretilen çıktı görüntüleri (commit'lemek istemiyorsan yorumu kaldır)
+# **/ciktilar/
