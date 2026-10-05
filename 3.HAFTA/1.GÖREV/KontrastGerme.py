@@ -10,7 +10,7 @@ kullanarak tüm pikselleri [0, 255] aralığına doğrusal olarak ölçekler:
 Ölçekleme için cv2.normalize, np.interp gibi hazır fonksiyonlar
 KULLANILMAZ; min/maks bulma ve ölçekleme piksel piksel döngüyle yapılır.
 
-Düşük kontrastlı resim yoksa, 2. haftadaki cameraman resminin tonları
+Düşük kontrastlı resim yoksa, 2. haftadaki (1. görev) cameraman resminin tonları
 [100, 160] aralığına sıkıştırılarak "dusuk_kontrast.png" oluşturulur.
 
 Kullanım:
@@ -30,7 +30,7 @@ import numpy as np
 # ---------------------------------------------------------------------------
 KLASOR = os.path.dirname(os.path.abspath(__file__))
 CIKTI_KLASORU = os.path.join(KLASOR, "ciktilar")
-KAYNAK_RESIM = os.path.join(KLASOR, "..", "2.HAFTA", "ciktilar", "cameraman.png")
+KAYNAK_RESIM = os.path.join(KLASOR, "..", "..", "2.HAFTA", "1.GÖREV", "ciktilar", "cameraman.png")
 DUSUK_KONTRAST_RESIM = os.path.join(CIKTI_KLASORU, "dusuk_kontrast.png")
 
 # Düşük kontrastlı resim üretirken tonların sıkıştırılacağı aralık

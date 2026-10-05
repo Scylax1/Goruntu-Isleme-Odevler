@@ -13,7 +13,7 @@ Düşük kontrastlı, tek kanallı (gri) bir görüntüyü OpenCV ile açar ve:
 Histogram, CDF ve eşitleme için cv2.calcHist, np.histogram, np.cumsum,
 cv2.equalizeHist gibi hazır fonksiyonlar KULLANILMAZ; hepsi döngüyle yapılır.
 
-Varsayılan girdi, kontrast germe ödevinde üretilen "dusuk_kontrast.png" resmidir. O resim
+Varsayılan girdi, kontrast germe ödevinde (1. görev) üretilen "dusuk_kontrast.png" resmidir. O resim
 yoksa cameraman resminin tonları [100, 160] aralığına sıkıştırılarak üretilir.
 
 Kullanım:
@@ -33,7 +33,7 @@ import numpy as np
 # ---------------------------------------------------------------------------
 KLASOR = os.path.dirname(os.path.abspath(__file__))
 CIKTI_KLASORU = os.path.join(KLASOR, "ciktilar")
-KAYNAK_RESIM = os.path.join(KLASOR, "..", "2.HAFTA", "ciktilar", "cameraman.png")
+KAYNAK_RESIM = os.path.join(KLASOR, "..", "..", "2.HAFTA", "1.GÖREV", "ciktilar", "cameraman.png")
 DUSUK_KONTRAST_RESIM = os.path.join(CIKTI_KLASORU, "dusuk_kontrast.png")
 
 # Düşük kontrastlı resim üretirken tonların sıkıştırılacağı aralık
