@@ -36,7 +36,7 @@ import numpy as np
 RESIM_URL = "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.19.3/skimage/data/camera.png"
 
 KLASOR = os.path.dirname(os.path.abspath(__file__))
-INEN_RESIM = os.path.join(KLASOR, "cameraman.png")
+INEN_RESIM = os.path.join(KLASOR, "ciktilar", "cameraman.png")
 CIKTI_KLASORU = os.path.join(KLASOR, "ciktilar")
 
 # Her liste 4 eleman: [sol üst, sağ üst, sol alt, sağ alt]

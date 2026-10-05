@@ -23,12 +23,18 @@ Pencereyi kapatınca bir sonraki grafiğe geçer.
 """
 
 import os
+import sys
 
 import matplotlib.pyplot as plt
 import numpy as np
 
+KLASOR = os.path.dirname(os.path.abspath(__file__))
+CIKTI_KLASORU = os.path.join(KLASOR, "ciktilar")
+
+# Ortak fonksiyonlar 2. görevin dosyasında; Python o klasörü de arasın
+sys.path.insert(0, os.path.join(KLASOR, "..", "2.GÖREV"))
+
 from ParlaklıkSeviyeleri4Parça import (
-    CIKTI_KLASORU,
     MAKS_PARLAKLIKLAR,
     SEVIYE_GRUPLARI,
     etiketle_ve_cizgi_ciz,
